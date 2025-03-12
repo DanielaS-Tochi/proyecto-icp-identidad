@@ -1,0 +1,26 @@
+{
+  "canisters": {
+    "mi_contador_backend": {
+      "main": "src/mi_contador_backend/main.mo",
+      "type": "motoko"
+    },
+    "mi_contador_frontend": {
+      "dependencies": [
+        "mi_contador_backend"
+      ],
+      "source": [
+        "src/mi_contador_frontend/dist"
+      ],
+      "type": "assets",
+      "workspace": "mi_contador_frontend"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
